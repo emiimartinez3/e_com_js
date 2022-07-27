@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 .App {
   text-align: center;
 }
@@ -36,3 +38,48 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*#### NAVBAR ####*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  height: 170px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.nav-items{
+  font-size: 23px;
+  font-family: 'Architects Daughter', cursive;
+  margin-right: 80px;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+  margin: 15px;
+  transition: .4s ease;
+}
+
+.nav-link:hover{
+  color: #b82532;
+}
+
+.rocket{
+  height: 170px;
+  width: 170px;
+}
+
+.logo{
+  margin-left: 80px;
+}
+
+
