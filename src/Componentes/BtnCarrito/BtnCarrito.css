@@ -1,0 +1,10 @@
+.pp{
+    color: #b82532;
+    text-decoration: none;
+    margin: 15px;
+    transition: .4s ease;
+}
+
+.pp:hover{
+    color: #df7c20;
+}
