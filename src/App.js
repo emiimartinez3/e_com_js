@@ -1,14 +1,17 @@
 import './App.css';
-import Navbar from './Componentes/Navbar/Navbar';
-/*import Card from './Componentes/Card/Card';*/
-import ItemList from './Componentes/ItemList/ItemList';
+import Navbar from './Componentes/Navbar/NavBar';
+import ItemList from './Componentes/ItemList/ItemListContainer';
+
 
 
 function App() {
+
+  
+
   return (
   <>
-      <Navbar />
-      <ItemList />
+    <Navbar />
+    <ItemList />
   </>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ItemList.css"
-import Card from '../Card/Card';
+import Card from '../Card/CardWidget';
 
 
 function ItemList() {

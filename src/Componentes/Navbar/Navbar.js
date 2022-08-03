@@ -14,7 +14,7 @@ const Navbar = () => {
                 <nav className="nav-items">
                     <a href="#" className="nav-link">Inicio</a>
                     <a href="#" className="nav-link">Mangas</a>
-                    <a href="#" className="nav-link">Novelvas</a>
+                    <a href="#" className="nav-link">Novelas</a>
                     <a href="#" className="nav-link">Comics</a>
                     <a href="#" className="nav-link">Contacto</a>
                     <BtnCarrito />

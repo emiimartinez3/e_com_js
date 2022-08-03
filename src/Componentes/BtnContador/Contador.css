@@ -1,0 +1,57 @@
+.contador{
+    height: auto;
+    border-radius: 3px;
+    display: grid;
+    padding: 5px;
+    margin: 10px;
+    transition: .3s ease;
+}
+
+.rr{
+    height: auto;
+    background-color: #b82532;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5px;
+    margin: 10px;
+    transition: .3s ease;
+}
+
+.btn-resta, .btn-suma{
+    font-size: 23px;
+    padding: 0 10px 0 10px;
+    border: none;
+    outline: none;
+    background-color: #b82532;
+    font-family: 'Architects Daughter', cursive;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.number{
+    color: black;
+    font-size: 20px;
+}
+
+.rr:hover{
+    background-color: #df7c20;
+}
+
+.btn-resta, .btn-suma:hover{
+    background-color: #df7c20;
+}
+
+.add-cart{
+    background-color:#b82532;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    transition: .3s ease;
+    margin: 10px;
+  }
+  
+  .add-cart:hover{
+    background-color: #df7c20;
+  }
