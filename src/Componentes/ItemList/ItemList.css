@@ -1,21 +1,12 @@
-.shop{
-    margin-top: 25px;
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-bottom: 35px;
-    }
-  
-  .shop_content{
+.product-boxx{
+    position: relative;
+    background-color: #0f0f0e;
+    color: white;
+    border-radius: 3px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, auto));
-    gap: 2.5rem;
   }
   
-  .section-title{
-      font-size: 2.2rem;
-      font-weight: 600;
-      text-align: start;
-      padding-bottom: 2.7rem;
-      padding-top: 2.7rem;
-      padding-left: 8px;
+  .product-boxx:hover{
+    padding: 10px;
+    transition: .3s ease;
   }
