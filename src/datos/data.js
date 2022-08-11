@@ -7,7 +7,7 @@ const itemsData = [{
     imgproducto: ""
   }, {
     id: 6,
-    name: "Amazing Spider-Man 2",
+    name: "Spider-Man 2",
     price: 943,
     stock: 10,
     category: "Comics",

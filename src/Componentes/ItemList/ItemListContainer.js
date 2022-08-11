@@ -60,8 +60,9 @@ function ItemListContainer() {
           <Card producto={producto[2]}/>
           <Card producto={producto[3]}/>
           <Card producto={producto[4]}/>
-        <ItemList data={data}/>
+          <ItemList data={data}/>
           </div> 
+          
          
     </section>
   )
@@ -69,10 +70,3 @@ function ItemListContainer() {
 
 export default ItemListContainer
 
-/*
- 
-
-
-          
-    
-*/ 

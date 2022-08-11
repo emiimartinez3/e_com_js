@@ -1,0 +1,46 @@
+.ditail-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, auto));
+    width: 1200px;
+    height: 670px;
+    background-color: black;
+    color: #df7c20;
+    margin: 50px;
+    padding: 10px;
+    justify-content: center;
+    transition: .3s ease;
+}
+
+.dt-container{
+    background-color: black;
+    display: grid;
+    padding: 25px;
+}
+
+.img-ditail{
+    width: 400px;
+    height: 600px;
+    padding: 25px;
+}
+
+.title-ditail{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.descrip-ditail{
+    margin: 0px;
+    font-size: 23px;
+}
+
+.conta, .carri{
+    background-color: #df7c20;
+    font-size: 26px;
+    border-radius: 5px;
+    margin: 5px;
+    height: 50px;
+}
+
+.ditail-container:hover{
+    padding: 3px;
+}
