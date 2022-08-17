@@ -26,6 +26,7 @@ const itemsData = [{
   price: 1638,
   stock: 5,
   category: "Comics",
+  description: "El doctor Hugo Strange dice haber encontrado una cura definitiva para las mentes criminales que acosan a Ciudad Gótica, y que ahora están encerradas en el Asilo de Arkham: una máquina capaz de extraer la maldad de sus cerebros. Para la prueba asisten Batman, Robin, el fiscal Harvey Dent y la prensa, pero el experimento sale mal y el contenedor de la maldad explota, vaciando su contenido sobre Dent. Ahora Dent se ha transformado en un ser mutante en donde el bien y el mal pelean una batalla constante minuto a minuto y se hace llamar Dos Caras",
   imgproducto: "/Multimedia/bat__dos__caras.jpg"
 },
   {
@@ -33,29 +34,30 @@ const itemsData = [{
     name: "Amazing Spider-Man",
     price: 1636,
     stock: 9,
+    description:"Algunas personas por naturaleza son amables y caritativas. Se podría decir que algunas personas, incluida al menos una persona en esta mesa, son héroes por naturaleza. Ben siempre me recordaba que cada uno de nosotros contiene todos los aspectos más nobles y malos de la humanidad, pero algunos reciben una dosis mayor que otros de una cosa u otra. Algunos son bonitos, malos y poco caritativos. Esa es su naturaleza. Puedes esperar algo mejor, incluso tratar de guiarlos a algo mejor, e incluso puedes tener éxito",
     category: "Comic",
     imgproducto: "/Multimedia/Comics/Amazing-Spider-Man-uno.jpg"
   }, {
     id: 6,
-    name: "Spider-Man 2",
+    name: "La Niebla",
     price: 943,
     stock: 10,
-    category: "Comics",
-    imgproducto: "/Multimedia/Comics/Amazing-Spider-Man.jpg"
+    category: "Novela",
+    imgproducto: "/Multimedia/Novela/la__niebla.png"
   }, {
     id: 7,
-    name: "Batman",
+    name: "Alice k",
     price: 1905,
     stock: 6,
-    category: "Comics",
-    imgproducto:"/Multimedia/Comics/Batman__uno.jpg"
+    category: "Novela",
+    imgproducto:"/Multimedia/Novela/alice__k.jpg"
   }, {
     id: 8,
-    name: "Civil War",
+    name: "Farenheit",
     price: 1638,
     stock: 5,
-    category: "Comics",
-    imgproducto: "/Multimedia/Comics/CivilWar-001.jpg"
+    category: "Novela",
+    imgproducto: "/Multimedia/Novela/farenheit.jpg"
   }, {
     id: 9,
     name: "The Walking Dead",
@@ -65,12 +67,39 @@ const itemsData = [{
     imgproducto: "/Multimedia/Comics/The-Walking-Dead.jpg"
   }, {
     id: 10,
-    name: "Eternauta",
+    name: "Mause",
     price: 977,
     stock: 2,
     category: "Comics",
-    imgproducto: "/Multimedia/Comics/Eternauta.jpg"
-  }]
+    imgproducto: "/Multimedia/Novela/mausee.jpg"
+  }, {
+    id: 11,
+    name: "Black Lagoon",
+    price: 1905,
+    stock: 6,
+    category: "Manga",
+    imgproducto:"/Multimedia/Manga/black-lagoon.jpg"
+  }, {
+    id: 12,
+    name: "B-TOOOM",
+    price: 1638,
+    stock: 5,
+    category: "Manga",
+    imgproducto: "/Multimedia/Manga/btooom-01.jpg"
+  }, {
+    id: 12,
+    name: "Nisekoi",
+    price: 844,
+    stock: 4,
+    category: "Manga",
+    imgproducto: "/Multimedia/Manga/nisekoi.jpg"
+  }, {
+    id: 14,
+    name: "DeadMan Wonderland",
+    price: 977,
+    stock: 2,
+    category: "Manga",
+    imgproducto: "/Multimedia/Manga/deadman-wonderland.jpg"}]
 ;
 
 export default itemsData;

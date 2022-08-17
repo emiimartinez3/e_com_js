@@ -2,8 +2,9 @@ import React from "react";
 /*import { FaUserCircle } from "react-icons/fa";*/
 import BtnCarrito from "../BtnCarrito/BtnCarrito";
 import "./Navbar.css";
+import { Link } from "react-router-dom"
 
-const Navbar = () => {
+export const Navbar = (category) => {
     return (
         <header className="header">
         
@@ -12,11 +13,11 @@ const Navbar = () => {
             </div>
             
                 <nav className="nav-items">
-                    <a href="#" className="nav-link">Inicio</a>
-                    <a href="#" className="nav-link">Mangas</a>
-                    <a href="#" className="nav-link">Novelas</a>
-                    <a href="#" className="nav-link">Comics</a>
-                    <a href="#" className="nav-link">Contacto</a>
+                    <Link to="/" className="nav-link">Inicio</Link>
+                    <Link to={`/categoria/Mangas`} className="nav-link">Mangas</Link>
+                    <Link to={`/categoria/Novelas`} className="nav-link">Novelas</Link>
+                    <Link to={`/categoria/Comics`} className="nav-link">Comics</Link>
+                    <Link to="#" className="nav-link">Contacto</Link>
                     <BtnCarrito />
                 </nav>
                    

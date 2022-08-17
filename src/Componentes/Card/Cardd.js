@@ -1,7 +1,8 @@
 import ItemContador from '../BtnContador/ItemCount'
 import "./Cardd.css"
+import { Link } from 'react-router-dom';
 
-function Cardd({ name, price, imgproducto, category }) {
+function Cardd({ name, price, imgproducto, category,id }) {
     const onAdd = (quantity)=>{
         console.log(`Compraste ${quantity} unidades`)
           }
@@ -12,7 +13,7 @@ function Cardd({ name, price, imgproducto, category }) {
           <h2 className='product-title'>{name}</h2>
           <span className='price'>$ {price}</span>
           <ItemContador initial={1} stock={9} onAdd={onAdd}/>
-
+          <Link to={`/detalle/${id}`}>Ver mas</Link>
       </div>
     );
   }

@@ -11,6 +11,7 @@ function ItemList({data}) {
           <div >
           <Cardd 
           key={singleMovie.id}
+          id={singleMovie.id}
           name={singleMovie.name}
           category={singleMovie.category}
           imgproducto={singleMovie.imgproducto}
