@@ -6,8 +6,8 @@ import {useParams} from 'react-router-dom'
 
 function ItemDitailContainer({itemid}){
   
-  const [item,setData] = useState({})
-  const idUrl = useParams().id
+  const [item,setItem] = useState({})
+  const idUrl = useParams().id;
 
   
 function getProducto () {
@@ -17,12 +17,12 @@ function getProducto () {
     resolve (itemRequested);
     if( itemRequested === undefined )
     reject('No esta ese producto')
-    else resolve(itemRequested)
+    else resolve(itemRequested);
   })
 }
    
   useEffect (()=> {
-    getProducto().then((product) => setData(product))
+    getProducto().then((product) => setItem(product))
     .catch ((error)=> alert(error));
     },[]);
 

@@ -15,7 +15,7 @@ function ItemListContainer() {
   
     const [data, setData] = useState ([]);
 
-    const idCategory = useParams().idCategory
+    const idCategory = useParams().idCategory;
 
     useEffect(() => { 
               getProducts().then((respuesta) => {

@@ -4,7 +4,7 @@ import BtnCarrito from "../BtnCarrito/BtnCarrito";
 import "./Navbar.css";
 import { Link } from "react-router-dom"
 
-export const Navbar = (category) => {
+export const Navbar = ({category}) => {
     return (
         <header className="header">
         
