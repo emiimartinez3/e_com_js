@@ -1,39 +1,36 @@
 import React, {useEffect, useState} from 'react'
 import ItemDitail from '../ItemDitail/ItemDitail';
 import itemsData from '../../datos/data';
-import {useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 
-function ItemDitailContainer({itemid}){
+const ItemDitailContainer = () => {
   
-  const [item,setItem] = useState({})
   const idUrl = useParams().id;
-
-  
-function getProducto () {
+ 
+  function getProducto () {
   return new Promise ((resolve,reject) => {
+    let itemRequested = itemsData.find( elemento => elemento.id==idUrl);
+    
+    ( itemRequested === undefined ) ? reject("item no encontrado") : resolve(itemRequested)
+  });
+};
 
-    let itemRequested = itemsData.find( elemento => elemento.id == idUrl)
-    resolve (itemRequested);
-    if( itemRequested === undefined )
-    reject('No esta ese producto')
-    else resolve(itemRequested);
-  })
-}
+  const [data,setData] = useState([])
    
   useEffect (()=> {
-    getProducto().then((product) => setItem(product))
-    .catch ((error)=> alert(error));
+    getProducto()
+    .then((respuesta) => setData(respuesta));
     },[]);
 
   return (
    <ItemDitail
-             key={item.id}
-             image={item.imgprducto}
-             name={item.name}
-             price={item.price}
-             category={item.category}
-             description={item.description}
+             key={data.id}
+             imgproducto={data.imgprducto}
+             name={data.name}
+             price={data.price}
+             category={data.category}
+             description={data.description}
    /> 
   )
 }

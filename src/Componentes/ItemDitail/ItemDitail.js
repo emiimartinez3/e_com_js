@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ItemDitail.css"
-import ItemContador from '../BtnContador/ItemCount'
-import { Link } from 'react-router-dom';
+import ItemContador from '../BtnContador/ItemCount';
+
 
 const ItemDitail = ({imgproducto,name,price,category,description}) => {
   const onAdd = (quantity)=>{
@@ -20,7 +20,6 @@ const ItemDitail = ({imgproducto,name,price,category,description}) => {
         <p className='descrip-ditail'>{description}</p>
         <span className='price-ditail'>${price}</span>
         <ItemContador initial={1} stock={9} onAdd={onAdd}/>
-        <Link to='/'>Volver</Link>
       </div>
     </section>
  )

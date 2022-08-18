@@ -15,20 +15,16 @@ function ItemListContainer() {
   
     const [data, setData] = useState ([]);
 
-    const idCategory = useParams().idCategory;
+    const category = useParams().idCategory;
 
     useEffect(() => { 
-              getProducts().then((respuesta) => {
-                let filtro = itemsData.filter((elemento)=> elemento.category === idCategory)
-                if (idCategory === undefined){
-                  setData(respuesta)
-                }
-                else {
-                  setData(filtro)
-                }
-                 
+             
+                let itemFiltre = itemsData.filter((elemento)=> elemento.category === category);
+                getProducts()
+                .then((respuesta) => {
+                 ( category == undefined ) ? setData( respuesta) : setData(itemFiltre);      
     });
-  },[idCategory]);
+  },[category]);
 
   return (
     

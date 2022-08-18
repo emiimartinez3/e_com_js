@@ -38,3 +38,17 @@
     margin-top:4px;
     padding-left: 8px;
   }
+
+  .ver_mas{
+    text-decoration: none;
+    color: #efa023;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 0px 10px;
+    transition: .3s ease;
+  }
+
+  .ver_mas:hover{
+    color: rgb(143, 26, 26);
+    
+  }
