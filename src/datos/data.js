@@ -4,6 +4,7 @@ const itemsData = [{
   name: "Thief Of Thieves",
   price: 1636,
   stock: 9,
+  description:"",
   category: "Comic",
   imgproducto: "/Multimedia/Comics/Thief-Of-Thieves.jpg"
 }, {
@@ -11,6 +12,7 @@ const itemsData = [{
   name: "Nightwing",
   price: 943,
   stock: 10,
+  description:"",
   category: "Comic",
   imgproducto: "/Multimedia/Comics/Nightwing__uno.jpg"
 }, {
@@ -18,6 +20,7 @@ const itemsData = [{
   name: "Daredevil",
   price: 1905,
   stock: 6,
+  description:"",
   category: "Comic",
   imgproducto:"/Multimedia/Comics/Daredevil.png"
 }, {
@@ -42,6 +45,7 @@ const itemsData = [{
     name: "La Niebla",
     price: 943,
     stock: 10,
+    description:"",
     category: "Novela",
     imgproducto: "/Multimedia/Novela/la__niebla.png"
   }, {
@@ -49,6 +53,7 @@ const itemsData = [{
     name: "Alice k",
     price: 1905,
     stock: 6,
+    description:"",
     category: "Novela",
     imgproducto:"/Multimedia/Novela/alice__k.jpg"
   }, {
@@ -56,6 +61,7 @@ const itemsData = [{
     name: "Farenheit",
     price: 1638,
     stock: 5,
+    description:"",
     category: "Novela",
     imgproducto: "/Multimedia/Novela/farenheit.jpg"
   }, {
@@ -63,6 +69,7 @@ const itemsData = [{
     name: "The Walking Dead",
     price: 844,
     stock: 4,
+    description:"",
     category: "Comic",
     imgproducto: "/Multimedia/Comics/The-Walking-Dead.jpg"
   }, {
@@ -70,6 +77,7 @@ const itemsData = [{
     name: "Mause",
     price: 977,
     stock: 2,
+    description:"",
     category: "Comic",
     imgproducto: "/Multimedia/Novela/mausee.jpg"
   }, {
@@ -77,6 +85,7 @@ const itemsData = [{
     name: "Black Lagoon",
     price: 1905,
     stock: 6,
+    description:"",
     category: "Manga",
     imgproducto:"/Multimedia/Manga/black-lagoon.jpg"
   }, {
@@ -84,6 +93,7 @@ const itemsData = [{
     name: "B-TOOOM",
     price: 1638,
     stock: 5,
+    description:"",
     category: "Manga",
     imgproducto: "/Multimedia/Manga/btooom-01.jpg"
   }, {
@@ -91,13 +101,15 @@ const itemsData = [{
     name: "Nisekoi",
     price: 844,
     stock: 4,
+    description:"La historia gira entorno a Raku Ichijou y Kirisaki Chitoge que son hijos de los lideres de los grupos mas fuertes de la ciudad,él de un yakuza y ella de un gangster deberian fingir ser novios ante los dos grupos para asi evitar una guerra entre estos.",
     category: "Manga",
     imgproducto: "/Multimedia/Manga/nisekoi.jpg"
   }, {
     id: 14,
     name: "DeadMan Wonderland",
     price: 977,
-    stock: 2,
+    stock: 6,
+    description:"Tras un devastador terremoto que hundió el 70% de Tokyo en el océano, la necesidad por la supervivencia obligó a su gente a obtener recursos de donde sea. Por ejemplo, una prisión propiedad de una empresa privada, que además de condenar malhechores también sirve de atractivo turístico. Los presos son además el personal de la atracción y entretenimiento de los visitantes.",
     category: "Manga",
     imgproducto: "/Multimedia/Manga/deadman-wonderland.jpg"
   },
@@ -105,7 +117,8 @@ const itemsData = [{
     id: 15,
     name: "X-Men",
     price: 977,
-    stock: 2,
+    stock: 5,
+    description:"",
     category: "Comic",
     imgproducto: "/Multimedia/Comics/X--Men.jpg"
   }]

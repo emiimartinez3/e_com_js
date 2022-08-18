@@ -3,6 +3,7 @@ import Navbar from './Componentes/Navbar/NavBar';
 import ItemListContainer from './Componentes/ItemList/ItemListContainer';
 import ItemDitailContainer from './Componentes/DitailContainer/ItemDitailContainer';
 import { BrowserRouter, Routes, Route} from "react-router-dom"
+import BtnCarrito from './Componentes/BtnCarrito/BtnCarrito';
 
 
 function App() {

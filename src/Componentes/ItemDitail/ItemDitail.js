@@ -2,11 +2,16 @@ import React from 'react'
 import "./ItemDitail.css"
 import ItemContador from '../BtnContador/ItemCount';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import BtnCarrito from '../BtnCarrito/BtnCarrito';
 
 
 const ItemDitail = ({data}) => {
-  const onAdd = (quantity)=>{
-    console.log(`Compraste ${quantity} unidades`)
+
+  const [goToCart, serGoToCart] = useState(false);
+
+  const onAdd = () => {
+    serGoToCart(true);
       }
 
  return (
@@ -20,8 +25,12 @@ const ItemDitail = ({data}) => {
         <p className='cat-ditail'>Categoria : {data.category}</p>
         <p className='descrip-ditail'>{data.description}</p>
         <span className='price-ditail'>${data.price}</span>
-        <ItemContador initial={1} stock={9} onAdd={onAdd}/>
-        <Link to={"/"} className="vover">volver</Link>
+        {
+          goToCart 
+                  ? <Link to={"/cart"}>Finalizar compra?</Link>
+                  : <ItemContador initial={1} stock={9} onAdd={onAdd}/>
+        }
+        <Link to={'/'} className="volver">Volver</Link>
       </div>
     </section>
  )

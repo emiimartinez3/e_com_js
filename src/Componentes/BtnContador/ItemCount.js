@@ -1,6 +1,3 @@
-
-
-
 import "./Contador.css"
 import React,{useEffect, useState} from 'react'
 import {FaShoppingBag} from "react-icons/fa";
