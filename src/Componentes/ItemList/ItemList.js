@@ -8,7 +8,6 @@ function ItemList({data}) {
     data.map((singleMovie) => {
       
       return(
-          <div >
           <Cardd 
           key={singleMovie.id}
           id={singleMovie.id}
@@ -17,7 +16,6 @@ function ItemList({data}) {
           imgproducto={singleMovie.imgproducto}
           price={singleMovie.price}
           />
-        </div>
         )
     })
   )

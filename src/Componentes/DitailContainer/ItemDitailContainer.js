@@ -10,7 +10,7 @@ const ItemDitailContainer = () => {
  
   function getProducto () {
   return new Promise ((resolve,reject) => {
-    let itemRequested = itemsData.find( elemento => elemento.id==idUrl);
+    let itemRequested = itemsData.find( elemento => elemento.id == idUrl);
     
     ( itemRequested === undefined ) ? reject("item no encontrado") : resolve(itemRequested)
   });
@@ -24,13 +24,7 @@ const ItemDitailContainer = () => {
     },[]);
 
   return (
-   <ItemDitail
-             key={data.id}
-             imgproducto={data.imgprducto}
-             name={data.name}
-             price={data.price}
-             category={data.category}
-             description={data.description}
+   <ItemDitail data={data}
    /> 
   )
 }

@@ -99,7 +99,16 @@ const itemsData = [{
     price: 977,
     stock: 2,
     category: "Manga",
-    imgproducto: "/Multimedia/Manga/deadman-wonderland.jpg"}]
+    imgproducto: "/Multimedia/Manga/deadman-wonderland.jpg"
+  },
+  {
+    id: 15,
+    name: "X-Men",
+    price: 977,
+    stock: 2,
+    category: "Comic",
+    imgproducto: "/Multimedia/Comics/X--Men.jpg"
+  }]
 ;
 
 export default itemsData;
