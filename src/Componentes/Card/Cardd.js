@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 
 function Cardd({ name, price, imgproducto, category,id }) {
     const onAdd = (quantity)=>{
-        console.log(`Compraste ${quantity} unidades`)
-          }
+      console.log(`Compraste ${quantity} unidades`)
+    }
+  
+    
     
     return (
       <div className="box-pro">

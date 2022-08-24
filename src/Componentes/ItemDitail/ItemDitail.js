@@ -1,17 +1,19 @@
-import React from 'react'
+
 import "./ItemDitail.css"
 import ItemContador from '../BtnContador/ItemCount';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import BtnCarrito from '../BtnCarrito/BtnCarrito';
+import { useCartContext} from "../../contex/CartContext";
 
 
 const ItemDitail = ({data}) => {
 
   const [goToCart, serGoToCart] = useState(false);
+ const { addProduct } = useCartContext();
 
-  const onAdd = () => {
+  const onAdd = (quantity) => {
     serGoToCart(true);
+    addProduct(data, quantity);
       }
 
  return (
@@ -30,14 +32,11 @@ const ItemDitail = ({data}) => {
                   ? <Link to={"/cart"}>Finalizar compra?</Link>
                   : <ItemContador initial={1} stock={9} onAdd={onAdd}/>
         }
-        <Link to={'/'} className="volver">Volver</Link>
+        <Link to={'/cart'} className="volver">Volver</Link>
       </div>
     </section>
  )
   
 }
-
-  
-
 
 export default ItemDitail

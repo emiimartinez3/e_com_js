@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import "./ItemList.css"
 import Cardd from '../Card/Cardd'
 
 function ItemList({data}) {
+
   return (
     
     data.map((singleMovie) => {
@@ -15,6 +16,7 @@ function ItemList({data}) {
           category={singleMovie.category}
           imgproducto={singleMovie.imgproducto}
           price={singleMovie.price}
+          stock={singleMovie.stock}
           />
         )
     })
