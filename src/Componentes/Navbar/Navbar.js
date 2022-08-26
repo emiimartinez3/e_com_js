@@ -16,7 +16,7 @@ function Navbar () {
                     <Link to={`/categoria/Mangas`} className="nav-link">Mangas</Link>
                     <Link to={`/categoria/Novelas`} className="nav-link">Novelas</Link>
                     <Link to={`/categoria/Comics`} className="nav-link">Comics</Link>
-                    <Link to={"#"} className="nav-link">Contacto</Link>
+                    <Link to={`/contacto`} className="nav-link">Contacto</Link>
                     <BtnCarrito />
                 </nav>
                    

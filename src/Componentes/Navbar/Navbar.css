@@ -8,6 +8,8 @@
   }
   
   .nav-items{
+    display: flex;
+    align-items: center;
     font-size: 23px;
     font-family: 'Architects Daughter', cursive;
     margin-right: 80px;

@@ -3,7 +3,7 @@ import "./ItemDitail.css"
 import ItemContador from '../BtnContador/ItemCount';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { useCartContext} from "../../contex/CartContext";
+import { useCartContext} from "../../context/CartContext";
 
 
 const ItemDitail = ({data}) => {
@@ -32,7 +32,7 @@ const ItemDitail = ({data}) => {
                   ? <Link to={"/cart"}>Finalizar compra?</Link>
                   : <ItemContador initial={1} stock={9} onAdd={onAdd}/>
         }
-        <Link to={'/cart'} className="volver">Volver</Link>
+        <Link to={'/'} className="volver">Volver</Link>
       </div>
     </section>
  )

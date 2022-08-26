@@ -19,7 +19,11 @@ const addProduct = (item, quantity) => {
     }
 }
 
-console.log("carrito: ", cart);
+const totalPrice = () => {
+    return cart.reduce((prev, act) => prev + act.quantity * act.price, 0)
+}
+
+const totalProductos = () => cart.reduce ((acumulador, productoActual) => acumulador + productoActual.quantity, 0);
 
 const clearCart = () => setCart([]);
 
@@ -32,7 +36,10 @@ const removeProduct = (id) => setCart(cart.filter(producto => producto.id !== id
             clearCart,
             isInCart,
             removeProduct,
-            addProduct
+            addProduct,
+            totalPrice,
+            totalProductos,
+            cart
         }}>
         {children} 
         </CartContext.Provider>

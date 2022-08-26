@@ -1,18 +1,23 @@
 
 import './BtnCarrito.css'
 import { FaShoppingBag } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import { useCartContext } from '../../context/CartContext';
 
 
 
-function BtnCarrito() {
 
-  
+const BtnCarrito = () => {
+
+   const { totalProductos } = useCartContext();
+
   return (
-        <>
-        <a href="#" className="pp"><FaShoppingBag/></a>
-       
-        </>
+    <div>
+        <Link to='/cart' className="pp"><FaShoppingBag/></Link>
+        <span className='agregado'>{ totalProductos() || ''}</span>
+    </div>
   )
 }
 
-export default BtnCarrito;
+export default BtnCarrito
+
