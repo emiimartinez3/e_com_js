@@ -6,11 +6,12 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 import React from 'react';
 import CartProvider from './context/CartContext';
 import Cart from './cart/Cart';
+import dataBaseFS from './services/firestore';
 
 
 
 function App() {
-
+  
   return (
   <>
     
