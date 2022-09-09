@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import "./ItemListContainer.css"
-import itemsData from '../../datos/data';
+
 import ItemList from '../ItemList/ItemList';
 import dataBaseFS from '../../services/firestore';
 import { getDocs, collection, query, where} from 'firebase/firestore'
@@ -54,13 +54,6 @@ function ItemListContainer() {
         });
       }
     }, [category]);
-             
-                /*let itemFiltre = itemsData.filter((elemento)=> elemento.category === category);
-                getProducts()
-                .then((respuesta) => {
-                 ( category == undefined ) ? setData( respuesta) : setData(itemFiltre);     
-    });
-  },[category]); */
 
   return (
     

@@ -8,7 +8,7 @@ import dataBaseFS from '../../services/firestore';
 
 const ItemDitailContainer = () => {
  
-  function getProducto (id) {
+  const getProducto = () => {
   return new Promise ((resolve) => {
 
 
@@ -29,7 +29,7 @@ const ItemDitailContainer = () => {
   useEffect (()=> {
     getProducto(id)
     .then((respuesta) => setData(respuesta));
-    },[id]);
+  }, [id])
 
   return (
    <ItemDitail data={data}

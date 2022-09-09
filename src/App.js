@@ -7,6 +7,7 @@ import React from 'react';
 import CartProvider from './context/CartContext';
 import Cart from './cart/Cart';
 import dataBaseFS from './services/firestore';
+import Contacto from './Componentes/Contacto/Contacto';
 
 
 
@@ -23,6 +24,7 @@ function App() {
              <Route path='/detalle/:id' element={<ItemDitailContainer />} />
              <Route path='/category/:idCategory' element={<ItemListContainer />} />
              <Route path='/cart' element={<Cart/>}/>
+             <Route path='/contacto' element={<Contacto/>}/>
           </Routes>
           </CartProvider>
     </BrowserRouter>

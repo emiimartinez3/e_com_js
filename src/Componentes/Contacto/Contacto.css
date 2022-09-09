@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.img-form{
+    width: 475px;
+    height: 800px;
+    
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgb(15, 13, 13);
+    color:  #efa023;
+    padding: 25px 15px 5px;
+    margin: 20px auto ;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contenido{
+    display: flex;
+    width: 100%;
+    
+}
+.contenido .formulario{
+    width: 50%;
+}
+
+.formulario{
+    padding-left: 10px;
+}
+
+.formulario .saok,
+.formulario textarea{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    border: 1px solid #efa023;
+    outline: none;
+    background-color: rgb(15, 13, 13);
+    color: #efa023;
+    font-size: 23px;
+    border-radius: 4px;
+    font-family: 'Architects Daughter', cursive;
+
+}
+
+.formulario textarea{
+    resize: none;
+}
+
+.enviar{
+    background-color: #b82532;
+    color: black;
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    font-family: 'Architects Daughter', cursive;
+    border-radius: 4px;
+    transition: .3s ease;
+    margin-top: 8px;
+}
+.enviar:hover{
+    background-color: #efa023;
+}

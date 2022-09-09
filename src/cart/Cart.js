@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import ItemCart from '../Componentes/ItemCart/ItemCart';
+import { UserForm } from '../Componentes/UseForm/UserForm';
 import { useCartContext } from '../context/CartContext'
+
 
 
 const Cart = () => {
@@ -20,13 +22,15 @@ const Cart = () => {
 
   return (
     <>
+       
     {
         cart.map(producto => <ItemCart key={producto.id} producto={producto} />)
     }
 
     <p>
-        total: {totalPrice()}
+        total: ${totalPrice()}
     </p>
+    <UserForm cart= {cart} />
     <Link to='/'>agrega mas productos!!!</Link>
     </>
   )
