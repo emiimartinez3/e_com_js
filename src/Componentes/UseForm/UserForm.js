@@ -10,6 +10,8 @@ import Button from '../../Button/Button';
 export const UserForm = () => {
   const {cart, totalPrice}= useCartContext();
 
+  const [ orderId, setOrderId] = useState(false)
+
     const [userData, setUserData] = useState({
         email: "",
         name: "", 
@@ -20,7 +22,6 @@ export const UserForm = () => {
       buyer:{...userData},
       item: [...cart],
       price: totalPrice(),
-      //date: new Date()
     }
 
      async function handleSubmit(e){
@@ -35,7 +36,7 @@ export const UserForm = () => {
         name: "",
         phone: ""
     });
-    console.log(ordenCompra);
+    setOrderId(docRef.id)
     }
 
     
@@ -51,11 +52,19 @@ export const UserForm = () => {
       console.log(copyUserData);
   }
   
+  if(orderId){
+    return(
+    <div className='gracias-c'>
+      <h1 className='gracias'>Gracias por tu compra!!!</h1>
+      <p className='gracias'>El id de seguimiento de tu conmpra es: {orderId}</p>
+    </div>
+  );}
+  
   return (
     <div className="form-container">
       <form  onSubmit={handleSubmit}>
         <div className="form-item">
-          <label htmlFor="name">Nombre</label>
+          <label htmlFor="name" className='tt'>Nombre</label>
           <input
             value={userData.name}
             onChange={changeInput}
@@ -63,11 +72,12 @@ export const UserForm = () => {
             type="text"
             placeholder="Nombre"
             required
+            className='in'
           />
         </div>
 
         <div className="form-item">
-          <label htmlFor="telefono">Telefono</label>
+          <label htmlFor="telefono" className='tt'>Telefono</label>
           <input
             value={userData.telefono}
             onChange={changeInput}
@@ -75,11 +85,12 @@ export const UserForm = () => {
             type="text"
             placeholder="Telefono"
             required
+            className='in'
           />
         </div>
 
         <div className="form-item">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email" className='tt'>Email</label>
           <input
             value={userData.email}
             onChange={changeInput}
@@ -87,6 +98,7 @@ export const UserForm = () => {
             type="text"
             placeholder="Correo"
             required
+            className='in'
           />
         </div>
 

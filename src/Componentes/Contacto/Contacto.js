@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Contacto.css"
-import Loader from './Loader';
 import Mensaje from './Mensaje';
 import { useForm } from './useForm'
 
@@ -126,7 +125,7 @@ function Contacto() {
 
             </form>
 
-            {loading && <Loader/> }
+            {loading }
             {response && (<Mensaje msg = "Los datos han sido enviados"/>)}
         </div>
 

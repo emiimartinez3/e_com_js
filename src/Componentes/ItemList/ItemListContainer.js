@@ -7,6 +7,7 @@ import dataBaseFS from '../../services/firestore';
 import { getDocs, collection, query, where} from 'firebase/firestore'
 
 
+
 function getProducts() {
   return new Promise ( (resolve) => {
     const productosCollection = collection (dataBaseFS, "productos");
@@ -19,6 +20,8 @@ function getProducts() {
     })
   })
 }
+
+
 
 function itemsFromIdCategory(categoria) {
 
@@ -61,6 +64,8 @@ function ItemListContainer() {
   
           <h2 className='section-title'>NUESTROS PRODUCTOS...</h2>
           
+          
+        
           <div className='shop_content'>
           <ItemList data={data}/>
           </div> 

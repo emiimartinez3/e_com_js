@@ -78,7 +78,7 @@ const itemsData = [{
     price: 977,
     stock: 2,
     description:"",
-    category: "Comic",
+    category: "Novela",
     imgproducto: "/Multimedia/Novela/mausee.jpg"
   }, {
     id: 11,
@@ -107,7 +107,7 @@ const itemsData = [{
   }, {
     id: 14,
     name: "DeadMan Wonderland",
-    price: 977,
+    price: 1277,
     stock: 6,
     description:"Tras un devastador terremoto que hundió el 70% de Tokyo en el océano, la necesidad por la supervivencia obligó a su gente a obtener recursos de donde sea. Por ejemplo, una prisión propiedad de una empresa privada, que además de condenar malhechores también sirve de atractivo turístico. Los presos son además el personal de la atracción y entretenimiento de los visitantes.",
     category: "Manga",

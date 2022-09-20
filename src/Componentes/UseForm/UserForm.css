@@ -1,10 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 .form-container{
     border-radius: 5px;
     padding: 20px;
-    width: 500px;
+    width: 700px;
     margin: 35px auto 5px;
-    background-color: rgb(239, 240, 246);
+    background-color: #b82532;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15); 
   }
   
@@ -21,4 +21,40 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+  }
+
+  .gracias{
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .gracias-c{
+    background-color: #b82532;
+    border-radius: 3px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 12px auto;
+  }
+
+  .tt{
+    font-size: 23px;
+    font-family: 'Architects Daughter', cursive;
+  }
+
+  .in{
+    width: 500px;
+    height: 30px;
+    background-color: #efa023;
+    color: black;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding-left: 8px;
+    font-family: 'Architects Daughter', cursive;
+  }
+
+  .in::placeholder{
+    color: rgba(12, 9, 9, 0.699);
   }

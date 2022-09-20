@@ -6,7 +6,7 @@ function Button({ text, type, onTouch, children }) {
     margin: "5px",
     border: "none",
     padding: "8px 16px",
-    backgroundColor: type === "alert" ? "#dd2240" : "#0077ee",
+    backgroundColor: type === "alert" ? "#0a0707" : "#0a0707",
   };
 
   return (

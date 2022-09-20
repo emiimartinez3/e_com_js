@@ -1,0 +1,57 @@
+.no-productos{
+    font-size: 40px;
+    text-align: center;
+}
+
+.shop-si{
+    text-decoration: none;
+    text-align: center;
+    color: #efa023;
+    transition: .4s ease;
+}
+
+.shop-si:hover{
+    color: black;
+}
+
+.boxbox{
+    margin-top: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#b82532;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: 850px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.boxbox:hover{
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1);
+}
+
+.total-p{
+    font-size: 30px;
+    text-align: center;
+}
+
+.produc-plus{
+    font-size: 23px;
+    text-align: center;
+    color: black;
+    transition: .3s ease;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.produc-a{
+    color: black;
+}
+
+.produc-a:hover{
+    color: #b82532;
+}
